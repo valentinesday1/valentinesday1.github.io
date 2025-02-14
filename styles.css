@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    font-family: 'Great Vibes', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6e6;
+    color: #b30000;
+    text-align: center;
+}
+
+header {
+    background-color: #ff4d4d;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a, a {
+    color: #ffb3b2;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover, a:hover {
+    color: #b30000;
+    text-decoration: underline;
+}
+
+.banner {
+    background: url('valentines-day-2025.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px #ff4d4d;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    border: 2px solid #ff4d4d;
+    border-radius: 15px;
+    background-color: #ffcccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #b30000;
+    text-shadow: 2px 2px 4px #ff4d4d;
+}
+
+p, li {
+    color: #660000;
+}
+
+.gallery {
+    background: #ffcccc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #ff4d4d;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    clear: both;
+    font-size: 1.1em;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #ffcccc;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0;
+    color: #b30000;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #b30000;
+    border-radius: 5px;
+    background-color: #ffe6e6;
+    color: #660000;
+    font-family: 'Great Vibes', cursive;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff4d4d;
+    outline: none;
+}
+
+form button {
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #b30000;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    form {
+        padding: 0.5em;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #ffcccc;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ff4d4d;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    color: #b30000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #660000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.player-container {
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    margin: 1em 0;
+    border: 2px solid #ff4d4d;
+    border-radius: 10px;
+    background-color: #ffcccc;
+}
